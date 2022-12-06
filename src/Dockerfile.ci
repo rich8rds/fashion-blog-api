@@ -1,0 +1,4 @@
+FROM openjdk:11
+EXPOSE 8080
+ADD target/week_nine_sq012-rich8rds.jar springboot-images-new.jar
+ENTRYPOINT ["java","jar","/week_nine_sq012-rich8rds.jar"]
