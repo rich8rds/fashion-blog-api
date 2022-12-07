@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c3af3bd5-17eb-45f5-8af9-a4189e3023e5" name="Changes" comment="" />
+    <list default="true" id="c3af3bd5-17eb-45f5-8af9-a4189e3023e5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,7 +56,13 @@
     &quot;spring.configuration.checksum&quot;: &quot;4bbb0e3439a8d80550e24db66646acf8&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Docker.Dockerfile">
     <configuration name="FashionBlogApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="fashionBlogAPI" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.richards.blog.FashionBlogApplication" />
@@ -61,6 +70,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="containerName" value="" />
+          <option name="sourceFilePath" value="Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.Dockerfile" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -74,7 +97,7 @@
       <workItem from="1670354912864" duration="2169000" />
       <workItem from="1670362937879" duration="624000" />
       <workItem from="1670394836837" duration="1487000" />
-      <workItem from="1670452363250" duration="1068000" />
+      <workItem from="1670452363250" duration="1699000" />
     </task>
     <servers />
   </component>
