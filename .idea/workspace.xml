@@ -6,7 +6,66 @@
   <component name="ChangeListManager">
     <list default="true" id="c3af3bd5-17eb-45f5-8af9-a4189e3023e5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/FashionBlogApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/apiresponse/ApiResponse$ApiResponseBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/apiresponse/ApiResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/apiresponse/ErrorResponse$ErrorResponseBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/apiresponse/ErrorResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/apiresponse/GlobalExceptionHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/controller/AdminController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/controller/CommentController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/controller/LikeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/dto/AddUserDto$AddUserDtoBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/dto/AddUserDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/dto/AdminDto$AdminDtoBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/dto/AdminDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/dto/CommentDto$CommentDtoBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/dto/CommentDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/dto/LoginDto$LoginDtoBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/dto/LoginDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/dto/ProductDto$ProductDtoBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/dto/ProductDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/dto/UserDto$UserDtoBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/dto/UserDto.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/entity/Admin$AdminBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/entity/Admin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/entity/BaseClass.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/entity/Comment$CommentBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/entity/Comment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/entity/Like$LikeBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/entity/Like.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/entity/Product$ProductBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/entity/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/entity/User$UserBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/entity/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/enums/Category.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/enums/Gender.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/enums/Role.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/enums/ValidationResult.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/exceptions/CustomerNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/exceptions/FieldBlankException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/exceptions/ProductAlreadyExistsException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/exceptions/ProductNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/exceptions/SessionIdNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/exceptions/UnAuthorizedException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/exceptions/ValidationException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/repository/AdminRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/repository/CommentRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/repository/LikeRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/repository/ProductRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/repository/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/service/AdminService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/service/CommentService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/service/LikeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/service/serviceimpl/AdminServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/service/serviceimpl/CommentServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/service/serviceimpl/LikeServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/service/serviceimpl/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/session/AdminInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/session/UserInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/validator/AdminRegValidatorService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/validator/RegistrationValidationService.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +121,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.Dockerfile">
+  <component name="RunManager" selected="Spring Boot.FashionBlogApplication">
     <configuration name="FashionBlogApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="fashionBlogAPI" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.richards.blog.FashionBlogApplication" />
@@ -97,7 +156,7 @@
       <workItem from="1670354912864" duration="2169000" />
       <workItem from="1670362937879" duration="624000" />
       <workItem from="1670394836837" duration="1487000" />
-      <workItem from="1670452363250" duration="1699000" />
+      <workItem from="1670452363250" duration="1967000" />
     </task>
     <servers />
   </component>
