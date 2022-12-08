@@ -7,9 +7,9 @@ import com.richards.blog.entity.Comment;
 import com.richards.blog.entity.Product;
 import com.richards.blog.entity.User;
 import com.richards.blog.enums.Category;
-import com.richards.blog.repository.AdminRepository;
 import com.richards.blog.repository.CommentRepository;
 import com.richards.blog.repository.ProductRepository;
+import com.richards.blog.repository.UserRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -50,8 +50,9 @@ class CommentControllerTest {
 
     @MockBean
     CommentRepository commentRepository;
+
     @MockBean
-    AdminRepository adminRepository;
+    UserRepository adminRepository;
 
     @MockBean
     ProductRepository productRepository;

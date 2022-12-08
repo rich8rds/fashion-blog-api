@@ -16,7 +16,10 @@ import java.util.List;
 @Builder
 @Entity
 @Table(name="products", uniqueConstraints = @UniqueConstraint(name = "name", columnNames = {"name"}))
-public class Product extends BaseClass {
+public class Product {
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
     private String name;
     private String description;
     private Category category;

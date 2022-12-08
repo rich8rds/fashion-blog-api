@@ -2,7 +2,7 @@ package com.richards.blog.validator;
 
 import com.richards.blog.dto.AdminDto;
 import com.richards.blog.enums.ValidationResult;
-import com.richards.blog.repository.AdminRepository;
+import com.richards.blog.repository.UserRepository;
 
 import java.util.function.Function;
 import java.util.regex.Pattern;
@@ -30,8 +30,8 @@ public interface AdminRegValidatorService extends Function<AdminDto, ValidationR
         return adminDto -> Pattern.matches(EMAIL_REGEX, adminDto.getEmail()) ? SUCCESS : EMAIL_NOT_VALID;
     }
 
-    static AdminRegValidatorService emailExists(AdminRepository adminRepository) {
-        return adminDto -> adminRepository.existsByEmail(adminDto.getEmail()) ? EMAIL_ALREADY_EXISTS : SUCCESS;
+    static AdminRegValidatorService emailExists(UserRepository userRepository) {
+        return adminDto -> userRepository.existsByEmail(adminDto.getEmail()) ? EMAIL_ALREADY_EXISTS : SUCCESS;
     }
 
     default AdminRegValidatorService and (AdminRegValidatorService other) {

@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.richards.blog.controller.CommentControllerIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.759 s - in com.richards.blog.controller.CommentControllerIntegrationTest

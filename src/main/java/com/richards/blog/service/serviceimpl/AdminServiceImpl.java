@@ -4,7 +4,6 @@ import com.richards.blog.apiresponse.ApiResponse;
 import com.richards.blog.dto.LoginDto;
 import com.richards.blog.dto.AdminDto;
 import com.richards.blog.dto.ProductDto;
-import com.richards.blog.entity.Admin;
 import com.richards.blog.entity.Product;
 import com.richards.blog.entity.User;
 import com.richards.blog.enums.Category;
@@ -13,11 +12,10 @@ import com.richards.blog.enums.ValidationResult;
 import com.richards.blog.exceptions.ProductAlreadyExistsException;
 import com.richards.blog.exceptions.ProductNotFoundException;
 import com.richards.blog.exceptions.UnAuthorizedException;
-import com.richards.blog.repository.AdminRepository;
 import com.richards.blog.repository.ProductRepository;
 import com.richards.blog.repository.UserRepository;
 import com.richards.blog.service.AdminService;
-import com.richards.blog.session.AdminInfo;
+import com.richards.blog.session.UserInfo;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
@@ -26,6 +24,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
 import javax.servlet.http.HttpSession;
+import java.nio.file.attribute.UserPrincipalNotFoundException;
 import java.util.List;
 import java.util.Optional;
 
@@ -34,59 +33,64 @@ import static com.richards.blog.validator.AdminRegValidatorService.*;
 @Service
 @RequiredArgsConstructor
 public class AdminServiceImpl implements AdminService {
-    private final AdminRepository adminRepository;
-    private final ProductRepository productRepository;
     private final UserRepository userRepository;
+    private final ProductRepository productRepository;
     private final HttpSession session;
 
     @Override
-    public ApiResponse<Admin> login(LoginDto loginDto) {
+    public ApiResponse<User> login(LoginDto loginDto) {
         String email = loginDto.getEmail();
         String password = loginDto.getPassword();
-        Optional<Admin> adminOptional = adminRepository.findByEmailAndPassword(email, password);
+        Optional<User> adminOptional = userRepository.findByEmailAndPassword(email, password);
 
         if(adminOptional.isEmpty())
             return new ApiResponse<>("Login failed", HttpStatus.NOT_ACCEPTABLE, null);
 
-        Admin admin = adminOptional.get();
+        User admin = adminOptional.get();
         session.setAttribute("adminInfo", admin);
         return new ApiResponse<>("Login successful", HttpStatus.OK, admin);
     }
 
     @Override
-    public ApiResponse<Admin> createNewAdmin(AdminDto adminDto) {
-        if(adminRepository.count() != 0) {
-            Long adminId = AdminInfo.getAdminSessionId(session);
-            boolean adminExists = adminRepository.existsById(adminId);
-            if (!adminExists) throw new UnAuthorizedException("You do not have the privileges required.");
-            checkAdminPrivileges();
-        }
-
+    public ApiResponse<User> createNewAdmin(AdminDto adminDto) {
         String email = adminDto.getEmail();
         String password = adminDto.getPassword();
+
+        User userInfo = UserInfo.getUser(session);
+        if(!userInfo.getRole().equals(Role.SUPERADMIN))
+            throw new UnAuthorizedException("You are not authorized to access this page!");
+
+        Optional<User> userOptional = userRepository.findByEmail(email);
+
+        if(userOptional.isPresent()) {
+            User user = userOptional.get();
+            if(!user.getRole().equals(Role.SUPERADMIN))
+                throw new UnAuthorizedException("You are not authorized to access this page!");
+        }
+
         ValidationResult result = isPasswordValid()
                 .and(isOtherPasswordValid())
                 .and(doPasswordsMatch())
                 .and(isEmailValid())
-                .and(emailExists(adminRepository))
+                .and(emailExists(userRepository))
                 .apply(adminDto);
 
         if(!result.equals(ValidationResult.SUCCESS))
             throw new IllegalArgumentException(result.name());
 
-        Role role = adminRepository.count() == 0 ? Role.SUPER_ADMIN : adminDto.getRole();
+        Role role = !userRepository.existsByRole(Role.SUPERADMIN) ? Role.SUPERADMIN : adminDto.getRole();
 
-        Admin admin = Admin.builder()
+        User admin = User.builder()
                 .email(email)
                 .password(password)
                 .role(role)
                 .build();
-        return new ApiResponse<>("Created Successfully", HttpStatus.CREATED, adminRepository.save(admin));
+        return new ApiResponse<>("Created Successfully", HttpStatus.CREATED, userRepository.save(admin));
     }
 
     @Override
     public ApiResponse<Product> addNewProduct(ProductDto productDto) {
-        checkAdminPrivileges();
+        isUserSuperAdmin();
         if(productRepository.existsByName(productDto.getName()))
             throw new ProductAlreadyExistsException("Product name already exists");
 
@@ -102,7 +106,7 @@ public class AdminServiceImpl implements AdminService {
 
     @Override
     public ApiResponse<Product> updateProduct(Long productId, ProductDto productDto) {
-        checkAdminPrivileges();
+        isUserSuperAdmin();
         Optional<Product> optionalProduct = productRepository.findById(productId);
         Product product = optionalProduct.orElseThrow(() ->
                 new ProductNotFoundException("Product with id: " + productId + " does not exist!"));
@@ -126,7 +130,7 @@ public class AdminServiceImpl implements AdminService {
 
     @Override
     public ApiResponse<String> deleteProduct(Long productId) {
-        checkAdminPrivileges();
+        isUserSuperAdmin();
         if(!productRepository.existsById(productId))
             throw new ProductNotFoundException("Product with id: " + productId + " does not exist!");
 
@@ -136,14 +140,14 @@ public class AdminServiceImpl implements AdminService {
 
     @Override
     public ApiResponse<String> deleteAllProducts() {
-        checkAdminPrivileges();
+        isUserSuperAdmin();
         productRepository.deleteAll();
         return new ApiResponse<>("Products Deleted Successfully", HttpStatus.OK, "DELETED ALL PRODUCTS");
     }
 
     @Override
     public ApiResponse<List<Product>> getAllProducts() {
-        checkAdminPrivileges();
+        isUserSuperAdmin();
         return new ApiResponse<>("Products Fetched Successfully", HttpStatus.OK, productRepository.findAll());
     }
 
@@ -160,10 +164,10 @@ public class AdminServiceImpl implements AdminService {
         return new ApiResponse<>(("Page " + page.get()), HttpStatus.OK, pageItem);
     }
 
-    private void checkAdminPrivileges() {
-        Role adminRole = AdminInfo.getAdminRole(session);
-        System.out.println("GETTING ADMIN PRIVILEGE?");
-        if(!adminRole.equals(Role.SUPER_ADMIN))
+    private void isUserSuperAdmin() {
+        User admin = UserInfo.getUser(session);
+        Role role = admin.getRole();
+        if(!role.equals(Role.SUPERADMIN))
             throw new UnAuthorizedException("You do not have the required privileges.");
     }
 }

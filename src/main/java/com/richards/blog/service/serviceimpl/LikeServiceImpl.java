@@ -1,16 +1,14 @@
 package com.richards.blog.service.serviceimpl;
 
 import com.richards.blog.apiresponse.ApiResponse;
-import com.richards.blog.dto.AddUserDto;
-import com.richards.blog.entity.User;
 import com.richards.blog.entity.Like;
 import com.richards.blog.entity.Product;
+import com.richards.blog.entity.User;
 import com.richards.blog.exceptions.ProductNotFoundException;
 import com.richards.blog.repository.LikeRepository;
 import com.richards.blog.repository.ProductRepository;
 import com.richards.blog.repository.UserRepository;
 import com.richards.blog.service.LikeService;
-import com.richards.blog.service.UserService;
 import com.richards.blog.session.UserInfo;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
