@@ -4,7 +4,6 @@ import com.richards.blog.apiresponse.ApiResponse;
 import com.richards.blog.dto.LoginDto;
 import com.richards.blog.dto.AdminDto;
 import com.richards.blog.dto.ProductDto;
-import com.richards.blog.entity.Admin;
 import com.richards.blog.entity.Product;
 import com.richards.blog.entity.User;
 import com.richards.blog.service.AdminService;
@@ -27,12 +26,12 @@ public class AdminController {
     }
 
     @PostMapping("/auth/login")
-    public ApiResponse<Admin> adminLogin(@RequestBody LoginDto loginDto) {
+    public ApiResponse<User> adminLogin(@RequestBody LoginDto loginDto) {
         return adminService.login(loginDto);
     }
 
     @PostMapping("/auth/create-new")
-    public ApiResponse<Admin> createNewAdmin(@RequestBody AdminDto adminDto) {
+    public ApiResponse<User> createNewAdmin(@RequestBody AdminDto adminDto) {
         return adminService.createNewAdmin(adminDto);
     }
 

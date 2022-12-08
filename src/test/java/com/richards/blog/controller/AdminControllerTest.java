@@ -4,12 +4,12 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.richards.blog.apiresponse.ApiResponse;
 import com.richards.blog.dto.AdminDto;
 import com.richards.blog.dto.ProductDto;
-import com.richards.blog.entity.Admin;
 import com.richards.blog.entity.Product;
+import com.richards.blog.entity.User;
 import com.richards.blog.enums.Category;
 import com.richards.blog.enums.Role;
-import com.richards.blog.repository.AdminRepository;
 import com.richards.blog.repository.ProductRepository;
+import com.richards.blog.repository.UserRepository;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -27,7 +27,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static org.hamcrest.CoreMatchers.is;
-import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
@@ -52,7 +51,7 @@ class AdminControllerTest {
     LikeController likeController;
 
     @MockBean
-    AdminRepository adminRepository;
+    UserRepository userRepository;
 
     @MockBean
     ProductRepository productRepository;
@@ -62,15 +61,15 @@ class AdminControllerTest {
 
     private List<Product> products;
 
-    private Admin admin;
+    private User admin;
 
 
     @BeforeEach
     void setUp() {
-        admin  = Admin.builder()
+        admin  = User.builder()
                 .email("richards@gmail.com")
                 .password("password123")
-                .role(Role.SUPER_ADMIN)
+                .role(Role.ADMIN)
                 .build();
 
         products = new ArrayList<>(List.of(
@@ -121,15 +120,15 @@ class AdminControllerTest {
         AdminDto adminDto = AdminDto.builder()
                 .email("richards@gmail.com")
                 .password("password123")
-                .role(Role.SUPER_ADMIN)
+                .role(Role.ADMIN)
                 .build();
 
-        when(adminRepository.save(admin)).thenReturn(admin);
+        when(userRepository.save(admin)).thenReturn(admin);
 
-        ApiResponse<Admin> apiResponse =
+        ApiResponse<User> apiResponse =
                 new ApiResponse<>("Created Successfully",
                 HttpStatus.CREATED,
-                adminRepository.save(admin));
+                userRepository.save(admin));
 
         when(adminController.createNewAdmin(adminDto)).thenReturn(apiResponse);
 
