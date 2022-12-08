@@ -3,15 +3,7 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.43">
     <root id="1">
       <DateStyle>mdy</DateStyle>
-      <Grants>1||-9223372036854775808|c|G
-1||10|c|G
-1||10|C|G
-1||10|T|G
-4||-9223372036854775808|c|G
-4||10|c|G
-4||10|C|G
-4||10|T|G</Grants>
-      <IntrospectionStateNumber>2096</IntrospectionStateNumber>
+      <IntrospectionStateNumber>2167</IntrospectionStateNumber>
       <ServerVersion>15.1</ServerVersion>
       <StartupTime>1670475475</StartupTime>
       <TimeZones>true ACDT
@@ -798,8 +790,7 @@ false Zulu
 </TimeZones>
     </root>
     <database id="2" parent="1" name="fashion_blog">
-      <Current>1</Current>
-      <ObjectId>17846</ObjectId>
+      <ObjectId>19488</ObjectId>
       <OwnerName>postgres</OwnerName>
     </database>
     <database id="3" parent="1" name="fashion_blog2">
@@ -881,23 +872,5 @@ false Zulu
       <StateNumber>1</StateNumber>
       <OwnerName>postgres</OwnerName>
     </tablespace>
-    <schema id="23" parent="2" name="information_schema">
-      <ObjectId>13449</ObjectId>
-      <StateNumber>524</StateNumber>
-      <OwnerName>postgres</OwnerName>
-    </schema>
-    <schema id="24" parent="2" name="pg_catalog">
-      <Comment>system catalog schema</Comment>
-      <ObjectId>11</ObjectId>
-      <StateNumber>518</StateNumber>
-      <OwnerName>postgres</OwnerName>
-    </schema>
-    <schema id="25" parent="2" name="public">
-      <Comment>standard public schema</Comment>
-      <Current>1</Current>
-      <ObjectId>2200</ObjectId>
-      <StateNumber>518</StateNumber>
-      <OwnerName>pg_database_owner</OwnerName>
-    </schema>
   </database-model>
 </dataSource>

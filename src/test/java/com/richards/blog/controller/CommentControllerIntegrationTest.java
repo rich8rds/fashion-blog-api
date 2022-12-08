@@ -5,6 +5,7 @@ import com.richards.blog.dto.AddUserDto;
 import com.richards.blog.dto.CommentDto;
 import com.richards.blog.entity.Comment;
 import com.richards.blog.entity.Product;
+import com.richards.blog.entity.User;
 import com.richards.blog.enums.Category;
 import com.richards.blog.exceptions.FieldBlankException;
 import com.richards.blog.exceptions.ProductNotFoundException;

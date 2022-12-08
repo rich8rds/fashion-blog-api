@@ -5,49 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c3af3bd5-17eb-45f5-8af9-a4189e3023e5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/maven.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/maven.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5b6983f3-d967-464c-8295-bbfcfd9b7deb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5b6983f3-d967-464c-8295-bbfcfd9b7deb.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5b6983f3-d967-464c-8295-bbfcfd9b7deb/storage_v2/_src_/database/fashion_blog.yZ2HwA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5b6983f3-d967-464c-8295-bbfcfd9b7deb/storage_v2/_src_/database/fashion_blog.yZ2HwA/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5b6983f3-d967-464c-8295-bbfcfd9b7deb/storage_v2/_src_/database/fashion_blog.yZ2HwA/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/richards/blog/FashionBlogApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/richards/blog/FashionBlogApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/richards/blog/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/richards/blog/controller/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/richards/blog/entity/Admin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/richards/blog/entity/BaseClass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/richards/blog/entity/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/richards/blog/entity/Comment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/richards/blog/entity/Like.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/richards/blog/entity/Like.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/richards/blog/entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/richards/blog/entity/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/richards/blog/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/richards/blog/entity/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/richards/blog/enums/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/richards/blog/enums/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/richards/blog/repository/AdminRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/richards/blog/repository/CommentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/richards/blog/repository/CommentRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/richards/blog/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/richards/blog/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/richards/blog/service/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/richards/blog/service/AdminService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/richards/blog/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/richards/blog/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/richards/blog/service/serviceimpl/AdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/richards/blog/service/serviceimpl/AdminServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/richards/blog/service/serviceimpl/CommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/richards/blog/service/serviceimpl/CommentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/richards/blog/service/serviceimpl/LikeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/richards/blog/service/serviceimpl/LikeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/richards/blog/session/AdminInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/richards/blog/validator/AdminRegValidatorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/richards/blog/validator/AdminRegValidatorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/richards/blog/controller/AdminControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/richards/blog/controller/AdminControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/console.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/console.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/richards/blog/controller/CommentControllerIntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/richards/blog/controller/CommentControllerIntegrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/richards/blog/controller/CommentControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/richards/blog/controller/CommentControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/richards/blog/controller/AdminController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/entity/Admin$AdminBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/entity/Admin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/entity/BaseClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/entity/Comment$CommentBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/richards/blog/entity/Comment$CommentBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/entity/Comment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/richards/blog/entity/Comment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/entity/Like$LikeBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/richards/blog/entity/Like$LikeBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/entity/Like.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/richards/blog/entity/Like.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/entity/Product$ProductBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/richards/blog/entity/Product$ProductBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/entity/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/richards/blog/entity/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/FashionBlogApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/richards/blog/FashionBlogApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/entity/User$UserBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/richards/blog/entity/User$UserBuilder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/richards/blog/entity/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/enums/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/richards/blog/enums/Role.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/repository/AdminRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/richards/blog/repository/UserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/service/AdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/richards/blog/service/AdminService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/service/serviceimpl/AdminServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/richards/blog/service/serviceimpl/AdminServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/service/serviceimpl/LikeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/richards/blog/service/serviceimpl/LikeServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/session/AdminInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/validator/AdminRegValidatorService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/richards/blog/validator/AdminRegValidatorService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/service/serviceimpl/CommentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/richards/blog/service/serviceimpl/CommentServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/console.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/console.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/richards/blog/controller/AdminControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/richards/blog/controller/AdminControllerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/richards/blog/controller/CommentControllerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/richards/blog/controller/CommentControllerTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +141,7 @@
       <workItem from="1670362937879" duration="624000" />
       <workItem from="1670394836837" duration="1487000" />
       <workItem from="1670452363250" duration="2719000" />
-      <workItem from="1670475702753" duration="4067000" />
+      <workItem from="1670475702753" duration="10156000" />
     </task>
     <servers />
   </component>
