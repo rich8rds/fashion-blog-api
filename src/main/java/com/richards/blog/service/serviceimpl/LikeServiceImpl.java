@@ -5,6 +5,7 @@ import com.richards.blog.entity.Like;
 import com.richards.blog.entity.Product;
 import com.richards.blog.entity.User;
 import com.richards.blog.exceptions.ProductNotFoundException;
+import com.richards.blog.exceptions.SessionIdNotFoundException;
 import com.richards.blog.repository.LikeRepository;
 import com.richards.blog.repository.ProductRepository;
 import com.richards.blog.repository.UserRepository;
@@ -31,24 +32,25 @@ public class LikeServiceImpl implements LikeService {
 
         Product product = productRepository.findById(productId)
                 .orElseThrow(() -> new ProductNotFoundException("Product Not Found!"));
+        if(userId.equals(0L)) throw new SessionIdNotFoundException("You have not made a comment");
 
-        if(userId.equals(0L)) {
-            User addUserDto = User.builder()
-                    .email(null)
-                    .username("GUEST")
-                    .build();
-
-            User newUser = userRepository.save(addUserDto);
-            session.setAttribute("userDetails", newUser);
-
-            Like like = Like.builder()
-                    .product(product)
-                    .user(newUser)
-                    .build();
-
-            likeRepository.save(like);
-            return new ApiResponse<>("Post Liked!", HttpStatus.OK, "PICTURE LIKED!");
-        }
+//        if(userId.equals(0L)) {
+//            User addUserDto = User.builder()
+//                    .email(null)
+//                    .username("GUEST")
+//                    .build();
+//
+//            User newUser = userRepository.save(addUserDto);
+//            session.setAttribute("userDetails", newUser);
+//
+//            Like like = Like.builder()
+//                    .product(product)
+//                    .user(newUser)
+//                    .build();
+//
+//            likeRepository.save(like);
+//            return new ApiResponse<>("Post Liked!", HttpStatus.OK, "PICTURE LIKED!");
+//        }
 
         Optional<Like> likeOptional = likeRepository.findLikeByUserIdAndProductId(userId, productId);
         likeOptional.ifPresent(likeRepository::delete);
