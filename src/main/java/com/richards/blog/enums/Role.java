@@ -1,5 +1,5 @@
 package com.richards.blog.enums;
 
 public enum Role {
-    SUPER_ADMIN, ADMIN
+    SUPERADMIN, ADMIN, REG_USER, GUEST
 }

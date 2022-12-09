@@ -4,8 +4,8 @@ import com.richards.blog.apiresponse.ApiResponse;
 import com.richards.blog.dto.CommentDto;
 import com.richards.blog.dto.AddUserDto;
 import com.richards.blog.entity.Comment;
-import com.richards.blog.entity.User;
 import com.richards.blog.entity.Product;
+import com.richards.blog.entity.User;
 import com.richards.blog.exceptions.FieldBlankException;
 import com.richards.blog.exceptions.ProductNotFoundException;
 import com.richards.blog.exceptions.UnAuthorizedException;
@@ -40,13 +40,10 @@ public class CommentServiceImpl implements CommentService {
         String commentStr = commentDto.getComment();
         String email = commentDto.getEmail();
         String username = commentDto.getUsername();
-
-        if(commentStr == null || commentStr.isBlank())
-            throw new FieldBlankException("Please fill in the field to post comment.");
-        if(email == null || email.isBlank()) throw new FieldBlankException("Email Cannot Be Blank");
-        if(username == null || username.isBlank()) throw new FieldBlankException("Username Cannot Be Blank");
+        performNullChecks(commentDto);
 
         System.out.println("INSIDE THIS BELLY 000 => userId: " + userId);
+
         if(!userId.equals(0L)) {
             System.out.println("INSIDE THIS BELLY 0001");
             User user = UserInfo.getUser(session);
@@ -78,14 +75,13 @@ public class CommentServiceImpl implements CommentService {
         AddUserDto addUserDto = AddUserDto.builder().email(email).username(username).build();
         ApiResponse<User> apiResponse = userService.registerNewUser(addUserDto);
 
-        System.out.println("MESSAGE: " + apiResponse.getMessage());
         User newUser = apiResponse.getData();
-
         if(newUser == null) try {
             throw new ValidationException(apiResponse.getMessage());
         } catch (ValidationException e) {
             throw new RuntimeException(e);
         }
+
         System.out.println("USER: " + newUser);
 
         Comment comment = Comment.builder().comment(commentStr)
@@ -132,5 +128,18 @@ public class CommentServiceImpl implements CommentService {
         commentRepository.deleteById(commentId);
 
         return new ApiResponse<>("Comment deleted successfully", HttpStatus.OK, "COMMENT DELETED");
+    }
+
+    private void performNullChecks(CommentDto commentDto) {
+        String commentStr = commentDto.getComment();
+        String email = commentDto.getEmail();
+        String username = commentDto.getUsername();
+
+        if(commentStr == null || commentStr.isBlank())
+            throw new FieldBlankException("Please fill in the field to post comment.");
+        if(email == null || email.isBlank())
+            throw new FieldBlankException("Email Cannot Be Blank");
+        if(username == null || username.isBlank())
+            throw new FieldBlankException("Username Cannot Be Blank");
     }
 }

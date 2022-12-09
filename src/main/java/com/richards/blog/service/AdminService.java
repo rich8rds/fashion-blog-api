@@ -4,7 +4,6 @@ import com.richards.blog.apiresponse.ApiResponse;
 import com.richards.blog.dto.LoginDto;
 import com.richards.blog.dto.AdminDto;
 import com.richards.blog.dto.ProductDto;
-import com.richards.blog.entity.Admin;
 import com.richards.blog.entity.Product;
 import com.richards.blog.entity.User;
 import org.springframework.data.domain.Page;
@@ -13,9 +12,9 @@ import java.util.List;
 import java.util.Optional;
 
 public interface AdminService {
-    ApiResponse<Admin> login(LoginDto loginDto);
+    ApiResponse<User> login(LoginDto loginDto);
 
-    ApiResponse<Admin> createNewAdmin(AdminDto adminDto);
+    ApiResponse<User> createNewAdmin(AdminDto adminDto);
 
     ApiResponse<Product> addNewProduct(ProductDto productDto);
 
