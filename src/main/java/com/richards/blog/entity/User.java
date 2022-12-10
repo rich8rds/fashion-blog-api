@@ -1,5 +1,6 @@
 package com.richards.blog.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.richards.blog.enums.Role;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -8,6 +9,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 @Data
 @AllArgsConstructor
@@ -26,6 +28,10 @@ public class User {
     private Role role;
     private Date createdAt;
     private Date updatedAt;
+
+    @JsonIgnore
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+    List<Like> likes;
 
 
     @PrePersist

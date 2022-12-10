@@ -9,6 +9,6 @@ import java.util.Optional;
 
 @Repository
 public interface LikeRepository extends JpaRepository<Like, Long> {
-    @Query(value = "SELECT * FROM likes WHERE customer_id=? AND product_id=?", nativeQuery = true)
-    Optional<Like> findLikeByUserIdAndProductId(Long customerId, Long productId);
+    @Query(value = "SELECT * FROM likes WHERE user_id=? AND product_id=?", nativeQuery = true)
+    Optional<Like> findLikeByUserIdAndProductId(Long userId, Long productId);
 }

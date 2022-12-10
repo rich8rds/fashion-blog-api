@@ -21,7 +21,7 @@ public class AdminController {
     private final AdminService adminService;
 
     @GetMapping("/products/all")
-    public ApiResponse<Page<Product>> getAllProducts(@RequestParam Optional<Integer> page, Optional<String> sortBy) {
+    public ApiResponse<Page<Product>> getAllProducts(@RequestParam Optional<Integer> page, @RequestParam Optional<String> sortBy) {
         return adminService.getAllProducts(page, sortBy);
     }
 

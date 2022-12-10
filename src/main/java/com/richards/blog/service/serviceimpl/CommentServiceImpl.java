@@ -33,7 +33,6 @@ public class CommentServiceImpl implements CommentService {
     private final HttpSession session;
     @Override
     public ApiResponse<Comment> addNewComment(Long productId, CommentDto commentDto) {
-        Long userId = UserInfo.getUserSessionId(session);
         Product product = productRepository.findById(productId)
                 .orElseThrow(() -> new ProductNotFoundException("Product does not exist!"));
 
@@ -42,52 +41,34 @@ public class CommentServiceImpl implements CommentService {
         String username = commentDto.getUsername();
         performNullChecks(commentDto);
 
-        System.out.println("INSIDE THIS BELLY 000 => userId: " + userId);
+        Optional<User> newUserOptional = userRepository.findByEmail(email);
 
-        if(!userId.equals(0L)) {
-            System.out.println("INSIDE THIS BELLY 0001");
-            User user = UserInfo.getUser(session);
-            if(user.getUsername().equals("GUEST")){
-                user.setEmail(email);
-                user.setUsername(username);
-            }
-            User passedUser = user;
-            //Find if the email exists already
-            Optional<User> userOptional = userRepository.findByEmail(email);
+        if(newUserOptional.isEmpty()) {
+            AddUserDto addUserDto = AddUserDto.builder().email(email).username(username).build();
+            ApiResponse<User> apiResponse = userService.registerNewUser(addUserDto);
 
-            if(userOptional.isPresent()) {
-                //Find oldUser details and delete but update the new one.
-                System.out.println("INSIDE THE BELLY");
-                commentRepository.deleteById(userId);
-                passedUser = userOptional.get();
-            }
-
-            userRepository.save(passedUser);
+            User newUser = apiResponse.getData();
+            session.setAttribute("userDetails", newUser);
 
             Comment comment = Comment.builder().comment(commentStr)
                     .product(product)
-                    .user(passedUser)
+                    .user(newUser)
                     .build();
 
+            if (newUser == null) try {
+                throw new ValidationException(apiResponse.getMessage());
+            } catch (ValidationException e) {
+                throw new RuntimeException(e);
+            }
             return new ApiResponse<>("Comment Added", HttpStatus.CREATED, commentRepository.save(comment));
         }
 
-        AddUserDto addUserDto = AddUserDto.builder().email(email).username(username).build();
-        ApiResponse<User> apiResponse = userService.registerNewUser(addUserDto);
-
-        User newUser = apiResponse.getData();
-        if(newUser == null) try {
-            throw new ValidationException(apiResponse.getMessage());
-        } catch (ValidationException e) {
-            throw new RuntimeException(e);
-        }
-
-        System.out.println("USER: " + newUser);
-
+        session.setAttribute("userDetails", newUserOptional.get());
         Comment comment = Comment.builder().comment(commentStr)
                 .product(product)
-                .user(newUser)
+                .user(newUserOptional.get())
                 .build();
+
 
         return new ApiResponse<>("Comment Added", HttpStatus.CREATED, commentRepository.save(comment));
     }

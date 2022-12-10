@@ -46,26 +46,16 @@ public class AdminServiceImpl implements AdminService {
             return new ApiResponse<>("Login failed", HttpStatus.NOT_ACCEPTABLE, null);
 
         User admin = adminOptional.get();
-        session.setAttribute("adminInfo", admin);
+        session.setAttribute("userDetails", admin);
         return new ApiResponse<>("Login successful", HttpStatus.OK, admin);
     }
 
     @Override
     public ApiResponse<User> createNewAdmin(AdminDto adminDto) {
+        isUserSuperAdmin();
         String email = adminDto.getEmail();
         String password = adminDto.getPassword();
-
-        User userInfo = UserInfo.getUser(session);
-        if(!userInfo.getRole().equals(Role.SUPERADMIN))
-            throw new UnAuthorizedException("You are not authorized to access this page!");
-
-        Optional<User> userOptional = userRepository.findByEmail(email);
-
-        if(userOptional.isPresent()) {
-            User user = userOptional.get();
-            if(!user.getRole().equals(Role.SUPERADMIN))
-                throw new UnAuthorizedException("You are not authorized to access this page!");
-        }
+        Role role = adminDto.getRole();
 
         ValidationResult result = isPasswordValid()
                 .and(isOtherPasswordValid())
@@ -76,8 +66,6 @@ public class AdminServiceImpl implements AdminService {
 
         if(!result.equals(ValidationResult.SUCCESS))
             throw new IllegalArgumentException(result.name());
-
-        Role role = !userRepository.existsByRole(Role.SUPERADMIN) ? Role.SUPERADMIN : adminDto.getRole();
 
         User admin = User.builder()
                 .email(email)

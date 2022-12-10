@@ -23,7 +23,6 @@ import java.util.Optional;
 public class LikeServiceImpl implements LikeService {
     private final ProductRepository productRepository;
     private final LikeRepository likeRepository;
-    private final UserRepository userRepository;
     private final HttpSession session;
 
     @Override
@@ -33,24 +32,6 @@ public class LikeServiceImpl implements LikeService {
         Product product = productRepository.findById(productId)
                 .orElseThrow(() -> new ProductNotFoundException("Product Not Found!"));
         if(userId.equals(0L)) throw new SessionIdNotFoundException("You have not made a comment");
-
-//        if(userId.equals(0L)) {
-//            User addUserDto = User.builder()
-//                    .email(null)
-//                    .username("GUEST")
-//                    .build();
-//
-//            User newUser = userRepository.save(addUserDto);
-//            session.setAttribute("userDetails", newUser);
-//
-//            Like like = Like.builder()
-//                    .product(product)
-//                    .user(newUser)
-//                    .build();
-//
-//            likeRepository.save(like);
-//            return new ApiResponse<>("Post Liked!", HttpStatus.OK, "PICTURE LIKED!");
-//        }
 
         Optional<Like> likeOptional = likeRepository.findLikeByUserIdAndProductId(userId, productId);
         likeOptional.ifPresent(likeRepository::delete);
