@@ -9,7 +9,6 @@ services:
     depends_on:
       - fashion_blog
 
-
   fashion_blog:
     image: 'postgres:latest'
     container_name: fashion_blog
