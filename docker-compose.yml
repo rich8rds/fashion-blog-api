@@ -1,0 +1,27 @@
+version: '3'
+services:
+  app:
+    image: 'fashion-blog-api:latest'
+    build:
+      context: .
+    ports:
+      - "8085:8080"
+    depends_on:
+      - fashion_blog
+
+
+  fashion_blog:
+    image: 'postgres:latest'
+    container_name: fashion_blog
+    ports:
+      - '5432'
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=fashion_blog
+    volumes:
+      - ./log-directory:/var/lib/postgresql/data
+    expose:
+      - 5432
+
+

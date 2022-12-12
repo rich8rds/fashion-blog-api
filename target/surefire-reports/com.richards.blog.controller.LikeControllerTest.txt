@@ -1,4 +1,14 @@
 -------------------------------------------------------------------------------
 Test set: com.richards.blog.controller.LikeControllerTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.838 s - in com.richards.blog.controller.LikeControllerTest
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 11.44 s <<< FAILURE! - in com.richards.blog.controller.LikeControllerTest
+getLikeCount  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'commandLineRunner' defined in com.richards.blog.FashionBlogApplication: Unsatisfied dependency expressed through method 'commandLineRunner' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.richards.blog.repository.UserRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.richards.blog.repository.UserRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+
+likeOrUnlikeProduct  Time elapsed: 0 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'commandLineRunner' defined in com.richards.blog.FashionBlogApplication: Unsatisfied dependency expressed through method 'commandLineRunner' parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.richards.blog.repository.UserRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.richards.blog.repository.UserRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+

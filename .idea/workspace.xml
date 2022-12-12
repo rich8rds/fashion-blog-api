@@ -5,28 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="da05baed-cf6d-40aa-bf60-f4c2e132e649" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/richards/blog/FashionBlogApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/richards/blog/FashionBlogApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/richards/blog/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/richards/blog/controller/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/richards/blog/entity/Like.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/richards/blog/entity/Like.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/richards/blog/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/richards/blog/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/richards/blog/repository/LikeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/richards/blog/repository/LikeRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/richards/blog/service/serviceimpl/AdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/richards/blog/service/serviceimpl/AdminServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/richards/blog/service/serviceimpl/CommentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/richards/blog/service/serviceimpl/CommentServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/richards/blog/service/serviceimpl/LikeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/richards/blog/service/serviceimpl/LikeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/FashionBlogApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/richards/blog/FashionBlogApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/controller/AdminController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/richards/blog/controller/AdminController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/entity/Like.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/richards/blog/entity/Like.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/entity/User$UserBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/richards/blog/entity/User$UserBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/richards/blog/entity/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/repository/LikeRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/richards/blog/repository/LikeRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/service/serviceimpl/AdminServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/richards/blog/service/serviceimpl/AdminServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/service/serviceimpl/CommentServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/richards/blog/service/serviceimpl/CommentServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/richards/blog/service/serviceimpl/LikeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/richards/blog/service/serviceimpl/LikeServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/fashion-blog-api.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/fashion-blog-api.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/fashion-blog-api.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/fashion-blog-api.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.richards.blog.controller.AdminControllerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.richards.blog.controller.AdminControllerTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.richards.blog.controller.CommentControllerIntegrationTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.richards.blog.controller.CommentControllerIntegrationTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.richards.blog.controller.CommentControllerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.richards.blog.controller.CommentControllerTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.richards.blog.controller.LikeControllerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.richards.blog.controller.LikeControllerTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.richards.blog.validator.RegistrationValidationServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.richards.blog.validator.RegistrationValidationServiceTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.richards.blog.controller.AdminControllerTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.richards.blog.controller.AdminControllerTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.richards.blog.controller.CommentControllerIntegrationTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.richards.blog.controller.CommentControllerIntegrationTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.richards.blog.controller.CommentControllerTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.richards.blog.controller.CommentControllerTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.richards.blog.controller.LikeControllerTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.richards.blog.controller.LikeControllerTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.richards.blog.validator.RegistrationValidationServiceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.richards.blog.validator.RegistrationValidationServiceTest.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +48,13 @@
       </map>
     </option>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="2IiOt81nMWZieBYXeHwBOj27UBM" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -70,7 +72,37 @@
     &quot;spring.configuration.checksum&quot;: &quot;4bbb0e3439a8d80550e24db66646acf8&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Docker.docker-compose.yml.fashion_blog: Compose Deployment">
+    <configuration name="AdminControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="fashionBlogAPI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.richards.blog.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.richards.blog.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.richards.blog.controller.AdminControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommentControllerIntegrationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="fashionBlogAPI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.richards.blog.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.richards.blog.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.richards.blog.controller.CommentControllerIntegrationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FashionBlogApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="fashionBlogAPI" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.richards.blog.FashionBlogApplication" />
@@ -84,8 +116,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="docker-compose.yml.fashion_blog: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="envFilePath" value="" />
+          <option name="services">
+            <list>
+              <option value="fashion_blog" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml.fashion_blog: Compose Deployment" />
+        <item itemvalue="JUnit.CommentControllerIntegrationTest" />
+        <item itemvalue="JUnit.AdminControllerTest" />
         <item itemvalue="Spring Boot.FashionBlogApplication" />
       </list>
     </recent_temporary>
@@ -99,7 +148,9 @@
       <option name="presentableId" value="Default" />
       <updated>1670576057193</updated>
       <workItem from="1670576061890" duration="12231000" />
-      <workItem from="1670661221362" duration="381000" />
+      <workItem from="1670661221362" duration="2004000" />
+      <workItem from="1670757253465" duration="3737000" />
+      <workItem from="1670827171945" duration="6855000" />
     </task>
     <servers />
   </component>

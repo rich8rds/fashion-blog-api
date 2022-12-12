@@ -1,0 +1,5 @@
+com/richards/blog/controller/CommentControllerTest.class
+com/richards/blog/controller/LikeControllerTest.class
+com/richards/blog/validator/RegistrationValidationServiceTest.class
+com/richards/blog/controller/CommentControllerIntegrationTest.class
+com/richards/blog/controller/AdminControllerTest.class
