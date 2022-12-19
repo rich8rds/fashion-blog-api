@@ -6,23 +6,58 @@
   <component name="ChangeListManager">
     <list default="true" id="da05baed-cf6d-40aa-bf60-f4c2e132e649" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/fashion-blog-api.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/fashion-blog-api.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/fashion-blog-api.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/fashion-blog-api.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.richards.blog.controller.AdminControllerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.richards.blog.controller.AdminControllerTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.richards.blog.controller.CommentControllerIntegrationTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.richards.blog.controller.CommentControllerIntegrationTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.richards.blog.controller.CommentControllerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.richards.blog.controller.CommentControllerTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.richards.blog.controller.LikeControllerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.richards.blog.controller.LikeControllerTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.richards.blog.validator.RegistrationValidationServiceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.richards.blog.validator.RegistrationValidationServiceTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.richards.blog.controller.AdminControllerTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.richards.blog.controller.AdminControllerTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.richards.blog.controller.CommentControllerIntegrationTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.richards.blog.controller.CommentControllerIntegrationTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.richards.blog.controller.CommentControllerTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.richards.blog.controller.CommentControllerTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.richards.blog.controller.LikeControllerTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.richards.blog.controller.LikeControllerTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.richards.blog.validator.RegistrationValidationServiceTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.richards.blog.validator.RegistrationValidationServiceTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/1247" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/1247" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/1247_vm" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/1247_vm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/1249" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/1249" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/1249_fsm" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/1249_fsm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/1249_vm" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/1249_vm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/1259" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/1259" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/1259_vm" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/1259_vm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/16385" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/16385" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/16394" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/16394" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/16401" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/16401" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/16410" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/16410" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/16411" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/16411" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/16417" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/16417" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/16421" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/16421" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2224" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2224" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2579" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2579" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2604" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2604" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2606" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2606" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2606_vm" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2606_vm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2608" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2608" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2608_fsm" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2608_fsm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2608_vm" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2608_vm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2610" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2610" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2610_fsm" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2610_fsm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2610_vm" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2610_vm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2620" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2620" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2656" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2656" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2657" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2657" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2658" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2658" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2659" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2659" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2662" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2662" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2663" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2663" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2664" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2664" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2665" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2665" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2666" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2666" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2667" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2667" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2673" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2673" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2674" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2674" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2678" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2678" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2679" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2679" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2699" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2699" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2701" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2701" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2702" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2702" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2703" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2703" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2704" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2704" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/3455" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/3455" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/5002" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/5002" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log-directory/global/pg_control" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/global/pg_control" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log-directory/pg_wal/000000010000000000000001" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/pg_wal/000000010000000000000001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log-directory/pg_xact/0000" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/pg_xact/0000" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log-directory/postmaster.pid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/console.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/console.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +185,12 @@
       <workItem from="1670576061890" duration="12231000" />
       <workItem from="1670661221362" duration="2004000" />
       <workItem from="1670757253465" duration="3737000" />
-      <workItem from="1670827171945" duration="6855000" />
+      <workItem from="1670827171945" duration="7870000" />
+      <workItem from="1670937655694" duration="661000" />
+      <workItem from="1671196758698" duration="454000" />
+      <workItem from="1671201672711" duration="3861000" />
+      <workItem from="1671260846998" duration="3442000" />
+      <workItem from="1671484895668" duration="48000" />
     </task>
     <servers />
   </component>
