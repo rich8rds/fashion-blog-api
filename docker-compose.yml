@@ -2,7 +2,7 @@ version: '3.8'
 services:
   app:
     container_name: fashion_blog_app
-    image: 'fashion-blog-api:latest'
+    image: rich8rds/fashion-blog-api:latest
     build:
       context: .
     ports:
