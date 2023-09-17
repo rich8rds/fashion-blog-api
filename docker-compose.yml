@@ -14,8 +14,9 @@ services:
     image: 'postgres:latest'
     container_name: fashion_blog_db
     ports:
-      - '5432'
+      - '5433:5432'
     environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://fashion_blog:5432/fashion_blog_db
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=password
       - POSTGRES_DB=fashion_blog
