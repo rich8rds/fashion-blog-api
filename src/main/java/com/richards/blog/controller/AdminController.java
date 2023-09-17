@@ -20,7 +20,7 @@ import java.util.Optional;
 public class AdminController {
     private final AdminService adminService;
 
-    @GetMapping("/products/all")
+    @GetMapping("/products")
     public ApiResponse<Page<Product>> getAllProducts(@RequestParam Optional<Integer> page, @RequestParam Optional<String> sortBy) {
         return adminService.getAllProducts(page, sortBy);
     }
@@ -36,25 +36,25 @@ public class AdminController {
     }
 
     // Add a new product
-    @PostMapping("/products/new")
+    @PostMapping("/products")
     public ApiResponse<Product> addNewProduct(@RequestBody ProductDto productDto) {
         return adminService.addNewProduct(productDto);
     }
 
     // Update Products
-    @PutMapping("/products/{productId}/update")
+    @PutMapping("/products/{productId}")
     public ApiResponse<Product> updateProduct(@PathVariable Long productId, @RequestBody ProductDto productDto) {
         return adminService.updateProduct(productId, productDto);
     }
 
     // Delete product
-    @DeleteMapping("/products/{productId}/delete")
+    @DeleteMapping("/products/{productId}")
     public ApiResponse<String> deleteProduct(@PathVariable Long productId) {
         return adminService.deleteProduct(productId);
     }
 
     // Delete all products
-    @DeleteMapping("/products/delete-all")
+    @DeleteMapping("/products")
     public ApiResponse<String> deleteAllProducts() {
         return adminService.deleteAllProducts();
     }
