@@ -5,59 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="da05baed-cf6d-40aa-bf60-f4c2e132e649" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/1247" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/1247" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/1247_vm" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/1247_vm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/1249" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/1249" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/1249_fsm" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/1249_fsm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/1249_vm" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/1249_vm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/1259" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/1259" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/1259_vm" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/1259_vm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/16385" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/16385" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/16394" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/16394" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/16401" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/16401" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/16410" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/16410" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/16411" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/16411" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/16417" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/16417" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/16421" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/16421" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2224" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2224" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2579" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2579" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2604" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2604" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2606" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2606" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2606_vm" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2606_vm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2608" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2608" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2608_fsm" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2608_fsm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2608_vm" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2608_vm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2610" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2610" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2610_fsm" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2610_fsm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2610_vm" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2610_vm" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2620" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2620" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2656" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2656" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2657" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2657" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2658" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2658" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2659" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2659" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2662" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2662" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2663" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2663" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2664" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2664" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2665" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2665" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2666" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2666" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2667" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2667" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2673" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2673" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2674" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2674" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2678" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2678" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2679" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2679" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2699" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2699" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2701" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2701" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2702" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2702" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2703" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2703" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/2704" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/2704" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/3455" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/3455" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log-directory/base/16384/5002" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/base/16384/5002" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log-directory/global/pg_control" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/global/pg_control" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log-directory/pg_wal/000000010000000000000001" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/pg_wal/000000010000000000000001" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log-directory/pg_xact/0000" beforeDir="false" afterPath="$PROJECT_DIR$/log-directory/pg_xact/0000" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log-directory/postmaster.pid" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/console.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/console.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,20 +19,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JpbToolWindowState">
-    <option name="myId2FirstActivated">
-      <map>
-        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
-        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
-        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
-      </map>
-    </option>
-    <option name="myId2Visible">
-      <map>
-        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
-        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
-        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
-      </map>
-    </option>
+    <option name="isToolWindowVisible" value="false" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -94,19 +32,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;4bbb0e3439a8d80550e24db66646acf8&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/richards/Desktop/Git/IdeaProjects/fashion-blog-api",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "spring.configuration.checksum": "f99012d3415d01ff34c1c82a977f017c",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Docker.docker-compose.yml.fashion_blog: Compose Deployment">
     <configuration name="AdminControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="fashionBlogAPI" />
@@ -191,6 +135,8 @@
       <workItem from="1671201672711" duration="3861000" />
       <workItem from="1671260846998" duration="3442000" />
       <workItem from="1671484895668" duration="48000" />
+      <workItem from="1694908682649" duration="1804000" />
+      <workItem from="1694955323321" duration="2558000" />
     </task>
     <servers />
   </component>

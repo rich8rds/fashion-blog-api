@@ -1,17 +1,18 @@
 version: '3'
 services:
   app:
+    container_name: fashion_blog_app
     image: 'fashion-blog-api:latest'
     build:
       context: .
     ports:
       - "8085:8080"
     depends_on:
-      - fashion_blog
+      - fashion_blog_db
 
-  fashion_blog:
+  fashion_blog_db:
     image: 'postgres:latest'
-    container_name: fashion_blog
+    container_name: fashion_blog_db
     ports:
       - '5432'
     environment:
@@ -20,7 +21,35 @@ services:
       - POSTGRES_DB=fashion_blog
     volumes:
       - ./log-directory:/var/lib/postgresql/data
+    networks:
+      - postgres
     expose:
       - 5432
+
+  pgadmin:
+    container_name: pgadmin_view
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: richie@gmail.com
+      PGADMIN_DEFAULT_PASSWORD: password
+      PGADMIN_CONFIG_SERVER_MODE: 'False'
+    volumes:
+      - pgadmin:/var/lib/pgadmin
+    ports:
+      - "8089:80"
+    networks:
+      - postgres
+    restart: unless-stopped
+
+
+networks:
+  postgres:
+    driver: bridge
+
+volumes:
+  postgres:
+  pgadmin:
+
+
 
 
